@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  DigitalMarketingFramework\Typo3\Distributor\JsonRequest\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  DigitalMarketingFramework\Typo3\Distributor\JsonRequest\Registry\EventListener\DistributorRegistryPluginUpdateEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'digital-marketing-framework/distributor-json-request/registry-update/distributor/plugin'
+        event: DigitalMarketingFramework\Typo3\Distributor\Core\Registry\Event\DistributorRegistryPluginUpdateEvent
