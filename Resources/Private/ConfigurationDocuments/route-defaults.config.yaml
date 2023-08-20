@@ -1,0 +1,44 @@
+distributor:
+    routes:
+        70c97d8d-a729-4a23-bb40-bc20e7e6e5c1:
+            uuid: 70c97d8d-a729-4a23-bb40-bc20e7e6e5c1
+            weight: 10000
+            value:
+                type: jsonRequest
+                pass: ''
+                config:
+                    jsonRequest:
+                        enabled: true
+                        async: inherit
+                        disableStorage: inherit
+                        enableDataProviders:
+                            type: all
+                            config:
+                                all: {  }
+                        gate:
+                            type: 'true'
+                            config:
+                                'true': {  }
+                        data:
+                            fieldMap:
+                                fields: {  }
+                            passthroughFields:
+                                enabled: false
+                            ignoreEmptyFields:
+                                enabled: true
+                            excludeFields:
+                                fields: {  }
+                            prefix:
+                                prefix: ''
+                                action: add
+                        url: ''
+                        cookies: {  }
+                        headers: {  }
+metaData:
+    name: JSON Request Route
+    version:
+        core: 1.0.0
+        distributor-core: 1.0.0
+        distributor-request: 1.0.0
+        distributor-json-request: 1.0.0
+    includes: {  }
