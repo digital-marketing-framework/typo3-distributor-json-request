@@ -5,10 +5,12 @@
     "type": "typo3-cms-extension",
     "keywords": [
         "TYPO3",
-        "extension",
-        "form",
-        "formrelay",
-        "http",
+        "marketing",
+        "framework",
+        "data",
+        "relay",
+        "distribution",
+        "distributor",
         "request",
         "json"
     ],
