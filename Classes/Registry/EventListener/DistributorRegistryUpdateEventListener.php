@@ -9,6 +9,6 @@ class DistributorRegistryUpdateEventListener extends AbstractDistributorRegistry
 {
     public function __construct()
     {
-        parent::__construct(new DistributorJsonRequestInitialization());
+        parent::__construct(new DistributorJsonRequestInitialization('dmf_distributor_json_request'));
     }
 }
