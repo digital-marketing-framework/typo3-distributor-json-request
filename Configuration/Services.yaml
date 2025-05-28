@@ -16,4 +16,4 @@ services:
   DigitalMarketingFramework\Typo3\Distributor\JsonRequest\Registry\EventListener\CoreRegistryUpdateEventListener:
     tags:
       - name: event.listener
-        event: DigitalMarketingFramework\Typo3\Core\Core\Registry\Event\CoreRegistryUpdateEvent
+        event: DigitalMarketingFramework\Typo3\Core\Registry\Event\CoreRegistryUpdateEvent
