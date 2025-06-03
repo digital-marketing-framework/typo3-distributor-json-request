@@ -31,6 +31,11 @@ jobs:
                     coverage: none
                     tools: 'composer:v2.4'
             -
+                name: 'Configure Composer for GitHub Token access'
+                run: 'composer config --global github-oauth.github.com ${GITHUB_TOKEN}'
+                env:
+                    GITHUB_TOKEN: ${{ secrets.ANYREL_GITHUB_TOKEN }}
+            -
                 name: 'Show Composer version'
                 run: 'composer --version'
             -
