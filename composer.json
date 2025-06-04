@@ -32,6 +32,15 @@
     "require-dev": {
         "mediatis/typo3-coding-standards": "^2.1 || ^3.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/digital-marketing-framework/distributor-json-request.git",
+            "only": [
+                "digital-marketing-framework/distributor-json-request"
+            ]
+        }
+    ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
