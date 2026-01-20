@@ -63,6 +63,9 @@
         "vendor-dir": ".Build/vendor"
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "3.x-dev"
+        },
         "typo3/cms": {
             "extension-key": "dmf_distributor_json_request",
             "web-dir": ".Build/Web"
